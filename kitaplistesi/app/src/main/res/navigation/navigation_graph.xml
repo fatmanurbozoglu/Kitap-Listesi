@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/kitapadifragmenti">
+
+    <fragment
+        android:id="@+id/kitapadifragmenti"
+        android:name="com.example.kitaplistesi.kitapadifragmenti"
+        android:label="fragment_kitapadifragmenti"
+        tools:layout="@layout/fragment_kitapadifragmenti" >
+        <action
+            android:id="@+id/action_kitapadifragmenti_to_detaylarfragmenti"
+            app:destination="@id/detaylarfragmenti" />
+    </fragment>
+    <fragment
+        android:id="@+id/detaylarfragmenti"
+        android:name="com.example.kitaplistesi.detaylarfragment"
+        android:label="fragment_detaylarfragmenti"
+        tools:layout="@layout/fragment_detaylarfragmenti" >
+        <action
+            android:id="@+id/action_detaylarfragmenti_to_kitapadifragmenti"
+            app:destination="@id/kitapadifragmenti" />
+        <argument
+            android:name="bilgiler"
+            app:argType="string"
+            android:defaultValue="menudengeldim" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

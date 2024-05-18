@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    // actıon barı kaldırdık
+    <style name="Base.Theme.Kitaplistesi" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Kitaplistesi" parent="Base.Theme.Kitaplistesi" />
+</resources>
